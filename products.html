@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="YiBu One Hub Solution: Global EV charging stations, Type 2/1//GB/T adapters, Conversion Head sourcing services from reliable and suppliers.">
+    <title>One Electra | EV Chargers & Parts</title>
+   <!--Link external CSS file -->
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+<!-- Header -->
+<header>
+   <div class="nav-container">
+        <img src="Pictures/logo-removebg.png" style="width:250px; height:80px; alignment-adjust:central">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link" data-page"index">Home</a></li>
+                <li><a href="about.html" class="nav-link" data-page"about">About</a></li>
+                <li><a href="products.html" class="nav-link" data-page"products">Products</a></li>
+                <li><a href="Services.html" class="nav-link" data-page"services">Services</a></li>
+                <li><a href="contact.html" class="nav-link" data-page"contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- Products Section -->
+
+    <h2 class="section-title">Our EV Products</h2>
+    <div class="products-grid">
+        <div class="product-card">
+            <div class="product-img">            
+            <img src="Products/DL-EU004-1-removebg-preview.png" style="width:200" height="190"></a></div>
+            <div class="product-info">
+                <h3>Type 2 & 1 | 7kw | Home Use</h3>
+                <p>16A/32A | WiFi/Bluetooth | NFC & App Control | Display Screen | 5m Cable</p>
+                <span class="product-tag">Pakistan & India</span>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <div class="product-img">
+            <img src="Products/DL-EU003-1.png" style="width:200" height="190"></a></div>
+            <div class="product-info">
+                <h3>Type 2 & 1 | 7kw | Home Use</h3>
+                <p>16A/32A | Swipe Card | 5m Cable | Easy to use for Home</p>
+                <span class="product-tag">Pakistan & India</span>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <div class="product-img">
+            <img src="Products/Industrial with EU plug bg.png" style="width:200" height="190"></a></div>
+            <div class="product-info">
+                <h3>Type 2/1 | EU Plug | 7kw | Home Use</h3>
+                <p>8A/32A | Bluetooth WiFi | App | 5m Cable | LED Display</p>
+                <span class="product-tag">European Standard</span>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <div class="product-img">
+            <img src="Products/industial bg.png" style="width:200" height="190"></a></div>
+            <div class="product-info">
+                <h3>Type 2 & 1 | 7kw | Home Use</h3>
+                <p>8A/32A | Bluetooth WiFi | App | 5m Cable | LED Display</p>
+                <span class="product-tag">European Standard</span>
+            </div>
+        </div>
+        
+       <div class="product-card">
+            <div class="product-img">
+            <img src="Products/byd-removebg.png" style="width:200" height="190"></a></div>
+            <div class="product-info">
+                <h3>BG/T | National Standard | 7kw | Home Use</h3>
+                <p>16A/32A | Swipe Card | 5m Cable | Easy to use</p>
+                <span class="product-tag">National Standard</span>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <div class="product-img">
+            <img src="Products/first_ev-removebg.png" style="width:200" height="190"></a></div>
+            <div class="product-info">
+                <h3>Type 2 & 1 | 7kw | Home Use</h3>
+                <p>16/32A | WiFi BlueTooth | 5m Cable | Display Screen</p>
+                <span class="product-tag">European & S-Asia</span>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <div class="product-img">
+            <img src="Products/NACS-removebg.png" style="width:200" height="190"></a></div>
+            <div class="product-info">
+                <h3>TESLA NACS | 3.5kw/7kw | 110~250AC | IP66</h3>
+                <p>8A/32A Adjustable | 5m Cable | With EU Plug</p>
+                <span class="product-tag">European Standard</span>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <div class="product-img">
+            <img src="Products/type2-removebg.png" style="width:200" height="190"></a></div>
+            <div class="product-info">
+                <h3>Type 2 |/7/11/22kw | Home Use</h3>
+                <p>16/32A | Swipe Card | 5m Cable | LED Display</p>
+                <span class="product-tag">European Standard</span>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">One Electra</div>
+        <p class="footer-text">Reliable EV Charging Solutions • Sourcing & Logistics • China ↔ World</p>
+        <div class="copyright">© 2026 One Electra. All Rights Reserved.</div>
+    </div>
+</footer>
+
+<!-- Page Switch Script -->
+<script>
+   document.querySelectorAll('.nav-link').forEach (link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+        const page = this.getAttribute('data-page');
+        document.getElementById(page).classList.add('active'
+        this.classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+});
+</script>
+</body>
+</html>

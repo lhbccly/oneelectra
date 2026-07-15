@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="YiBu One Hub Solution: Global EV charging stations, Type 2/1//GB/T adapters, Conversion Head sourcing services from reliable and suppliers.">
+    <title>One Electra | EV Chargers & Parts</title>
+    <!--Link external CSS file -->
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="nav-container">
+        <img src="Pictures/logo-removebg.png" style="width:250px; height:80px; alignment-adjust:central">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link" data-page"index">Home</a></li>
+                <li><a href="about.html" class="nav-link" data-page"about">About</a></li>
+                <li><a href="products.html" class="nav-link" data-page"products">Products</a></li>
+                <li><a href="Services.html" class="nav-link" data-page"services">Services</a></li>
+                <li><a href="contact.html" class="nav-link" data-page"contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Home Section -->
+<section id="home" class="active">
+    <div class="hero">
+        <h1>Your Global Partner for EV Charging & Parts</h1>
+        <p>Certified EV chargers, Type 2/1/GB/T adapters, Conversion Head, and reliable China ↔ worldwide sourcing with all-inclusive Services.</p>
+        <div class="btn-group">
+            <a href="products.html" class="btn btn-outline nav-link" data-page="products">Browse Products</a>
+            <a href="contact.html" class="btn btn-outline nav-link" data-page="contact">Get Quote</a>
+            <a href="https://www.yibuglobal.com" class="btn btn-outline nav-link" target="_blank" rel="noopener noreferrer">Global Partner</a>
+ 
+   </div>     
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">One Electra</div>
+        <p class="footer-text">Reliable EV Charging Solutions • Sourcing & Logistics • China ↔ World</p>
+        <div class="copyright">© 2026 One Electra. All Rights Reserved.</div>
+    </div>
+</footer>
+
+<!-- Page Switch Script -->
+<script>
+   document.querySelectorAll('.nav-link').forEach (link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+        const page = this.getAttribute('data-page');
+        document.getElementById(page).classList.add('active'
+        this.classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+});
+</script>
+</body>
+</html>
